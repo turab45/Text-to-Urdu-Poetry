@@ -3,14 +3,6 @@ import openai
 # Define your OpenAI API key
 openai.api_key = "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"
 
-# Define a list of possible questions that users might ask
-questions = [
-    "What are the hours of operation?",
-    "What types of equipment do you have?",
-    "Do you offer personal training?",
-    "How much does a membership cost?",
-    # Add more questions as needed
-]
 
 # Define a function to handle incoming messages and generate responses
 def handle_message(message):
@@ -48,27 +40,3 @@ def handle_message(message):
     
     return response_text
 
-# Define a function to generate a response to a specific question
-def generate_response(question):
-    # Add any necessary formatting to the question here
-    # (e.g. add context or other information)
-    
-    # Call the handle_message function with the question as input
-    response = handle_message(question)
-    
-    # Add any necessary formatting to the response here
-    # (e.g. remove unwanted words/phrases, add context, etc.)
-    
-    return response
-
-# Example usage: generate a response to the question "What are the hours of operation?"
-while True:
-    inp = input("Input: ")
-    response = generate_response(inp)
-    print("==> You: ", inp)
-    print("==> FitnessGPT: ", response['choices'][0]['message']['content'])
-    choice = input("Do you want to chat more? (y/n): ")
-    if choice == 'y':
-        continue
-    else:
-        break
