@@ -1,7 +1,7 @@
 import openai
 
 # Define your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "YOUR_API_KEY"
 
 
 # Define a function to handle incoming messages and generate responses
