@@ -3,8 +3,6 @@ This project demonstrates how to use the OpenAI ChatGPT API to generate Urdu poe
 
 
 # Video Explanation
-<video width="320" height="240" controls>
-  <source src="media/video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://img.youtube.com/vi/JIn7dYxQ3Ps/maxresdefault.jpg)](https://www.youtube.com/watch?v=JIn7dYxQ3Ps)
+
 
